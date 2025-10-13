@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(116, 73, 141);
+}
+
+p{
+    background-color: rgb(102, 81, 161);
+    color:burlywood;
+}
+
+.box{
+    background-color: rgb(236, 216, 114);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#THREE{
+    padding: 50px;
+}
+
+#TWO{
+    border: 15px purple dotted;
+}
+
+#ONE p{
+    color:white;
+}
+
+#FOUR p{
+    display: inline;
+}
+
+#FIVE{
+    width: 100px;
+    height:100px;
+    margin-left: 200px;
+}
+
+.tired{
+    width: 33%;
+    height:50px;
+    display: inline-block;
+}
+
+.tired:hover{
+    background-color: bisque;
+}

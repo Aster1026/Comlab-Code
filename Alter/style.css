@@ -32,6 +32,8 @@ body{
 
 .up{
     display: inline-block;
+    overflow:auto;
+    vertical-align: middle;
 }
 
 .content{
@@ -79,6 +81,9 @@ body{
     overflow:auto;
     display:inline-block;
 }
+.work2:hover{
+    color:rgb(95, 132, 212);
+}
 .work1:hover{
     color:rgb(95, 132, 212);
 }
@@ -86,6 +91,27 @@ body{
 .work2{
     overflow:auto;
     display:inline-block;
+}
+
+.submission1{
+    width:100%;
+    height:100px;
+    background-color: white;
+    bottom:0;
+    position:sticky;
+}
+.submission{
+    display:inline-block;
+    line-height:50px;
+}
+
+.game:hover{
+    color:rgb(95, 132, 212);
+}
+
+.contentbox{
+    display:inline-block;
+    vertical-align:top;
 }
 
 

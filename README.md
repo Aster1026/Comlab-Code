@@ -14,7 +14,7 @@ My github account is [HERE](https://github.com/Aster1026/Comlab-Code)!
 ![Website2](2.jpg)
 
 
-* [Me_and_My_Friend](MyfirstWebsite)
+* [Me_and_My_Friend](Myfirstwebsite)
 
 About CSS Layout:
 

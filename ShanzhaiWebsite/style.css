@@ -20,13 +20,14 @@ a{
     display:inline-block;
     color: black;
     font-size: 18px;
+    color:#00ADEE;
 }
 .nav:hover{
     color:rgb(95, 132, 212);
 }
 
 #banner{
-    background-color: rgb(66, 18, 103);
+    background-color: #171A21;
     width: 100%;
     height: 160px;
     font-size: 38px;
@@ -84,12 +85,7 @@ a{
     overflow:auto;
     display:inline-block;
 }
-.work2:hover{
-    color:rgb(95, 132, 212);
-}
-.work1:hover{
-    color:rgb(95, 132, 212);
-}
+
 
 .work2{
     overflow:auto;
@@ -99,7 +95,7 @@ a{
 .submission1{
     width:100%;
     height:100px;
-    background-color: white;
+    background-color: rgb(97, 182, 213);
     bottom:0;
     position:sticky;
 }
@@ -108,9 +104,7 @@ a{
     line-height:50px;
 }
 
-.game:hover{
-    color:rgb(95, 132, 212);
-}
+
 
 .contentbox{
     display:inline-block;
@@ -143,14 +137,51 @@ a{
     place-items: center;
 }
 .Summary:hover{
-    background-color: aliceblue;
+    background-color: red;
 }
 .SummaryWrap{
-    border-right : 1px solid black;
+    border-right : 1px solid white;
     display:inline-block;
-    background-color: white;
+    background-color: black;
     overflow:auto;
     vertical-align: top;
 }
 
+.scorescore1{
+    display:inline-block;
+    overflow: auto;
+}
 
+.scorescore2{
+    display:inline-block;
+    overflow: auto;
+}
+
+.aaa{
+    text-align: center;
+    padding-top:20px;
+    font-size: 30px;
+    outline: 6px black solid;
+    display:inline-block;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(174, 174, 174);
+    margin-top:400px;
+    margin-left:280px;
+    overflow:auto;
+}
+
+.announcementtt{
+    margin-left:200px;
+    border:black solid 2px;
+    background-color:rgba(107, 122, 135,0.5);
+    color:white
+}
+
+.taskkk{
+    background-color: rgba(176, 176, 176, 0.5);
+    margin-left:100px;
+    border:black solid 2px;
+    width:1200px;
+    height:1200px;
+}

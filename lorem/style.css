@@ -1,6 +1,7 @@
 
 .body{
     line-height:100px;
+    text-align: center;
 }
 
 .lovebox{
@@ -20,26 +21,24 @@
 }
 
 .whole{
-    margin-left:550px;
-    margin-top:30px;
-    padding-left:20px;
-    padding-right:10px;
-    font-family:'Courier New', Courier, monospace;
-    width:300px;
-    height:400px;
-    background-color: antiquewhite;
-    display:grid;
-    place-items:center;
+  display: inline-block;   /* <-- 关键：让 div 行内显示 */
+  vertical-align: top;     /* 控制纵向对齐（top / middle / bottom）*/
+  margin: 30px 10px;       /* 上下/左右间距，改掉原来那种大 left margin */
+  width: 330px;
+  height: 400px;
+  background-color: antiquewhite;
+  font-family: 'Courier New', Courier, monospace;
 }
-
-
 
 .amo1, .amo2, .amo3, .love1, .love2, .love3, .love4, .ai1, .ai2, .liebe1, .liebe2, .liebe3, .liebe4, .liebe5{
     color:rgb(206, 106, 48);
 }
 
 .wholepara{
-    transition: color 2s ease;
+
+  
+  
+  transition:color 2s ease-in;
 }
 
 .wholepara:hover{
@@ -202,7 +201,7 @@ animation-play-state: running;
 
 @keyframes liebe5 {
   0% { transform: translateY(0) translate(0) scale(1); }
-  100%   { transform: translateY(400px) translate(450px) scale(3); }
+  100%   { transform: translateY(400px) translate(400px) scale(3); }
 }
 .liebe5{
  display: inline-block;

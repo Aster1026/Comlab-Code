@@ -24,11 +24,10 @@
   display: inline-block;   /* <-- 关键：让 div 行内显示 */
   vertical-align: top;     /* 控制纵向对齐（top / middle / bottom）*/
   margin: 30px 10px;       /* 上下/左右间距，改掉原来那种大 left margin */
-  width: 300px;
+  width: 330px;
   height: 400px;
   background-color: antiquewhite;
   font-family: 'Courier New', Courier, monospace;
-  box-sizing: border-box;  
 }
 
 .amo1, .amo2, .amo3, .love1, .love2, .love3, .love4, .ai1, .ai2, .liebe1, .liebe2, .liebe3, .liebe4, .liebe5{
@@ -36,10 +35,9 @@
 }
 
 .wholepara{
-  display: grid;
-  place-items: center;     
-  width: 100%;
-  height: 100%;
+
+  
+  
   transition:color 2s ease-in;
 }
 
@@ -203,7 +201,7 @@ animation-play-state: running;
 
 @keyframes liebe5 {
   0% { transform: translateY(0) translate(0) scale(1); }
-  100%   { transform: translateY(400px) translate(450px) scale(3); }
+  100%   { transform: translateY(400px) translate(400px) scale(3); }
 }
 .liebe5{
  display: inline-block;

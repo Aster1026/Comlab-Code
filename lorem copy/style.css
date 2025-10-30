@@ -1,0 +1,244 @@
+
+.body{
+    line-height:100px;
+    text-align: center;
+}
+
+.lovebox{
+    background-color: antiquewhite;
+    width: 328px;
+    height: 50px;
+    margin-left:550px;
+    margin-top: 70px;;
+}
+
+.liebebox{
+    background-color: antiquewhite;
+    width: 328px;
+    height: 50px;
+    margin-left:550px;
+    margin-top: 30px;;
+}
+
+.whole{
+  display: inline-block;   /* <-- 关键：让 div 行内显示 */
+  vertical-align: top;     /* 控制纵向对齐（top / middle / bottom）*/
+  margin: 30px 10px;       /* 上下/左右间距，改掉原来那种大 left margin */
+  width: 300px;
+  height: 400px;
+  background-color: antiquewhite;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;  
+}
+
+.amo1, .amo2, .amo3, .love1, .love2, .love3, .love4, .ai1, .ai2, .liebe1, .liebe2, .liebe3, .liebe4, .liebe5{
+    color:rgb(206, 106, 48);
+}
+
+.wholepara{
+  display: grid;
+  place-items: center;     
+  width: 100%;
+  height: 100%;
+  transition:color 2s ease-in;
+}
+
+.wholepara:hover{
+    color:rgb(219, 107, 165);
+}
+
+@keyframes love1 {
+  0% { transform: translateY(0) scale(1); }
+  100%   { transform: translateY(-200px) scale(3); }
+}
+.love1{
+ display: inline-block;
+ animation: love1 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.love1:hover{
+    animation-play-state: running;
+}
+
+@keyframes love2 {
+  0% { transform: translateY(0) translate(0) scale(1); }
+  100%   { transform: translateY(-220px) translate(-50px) scale(3); }
+}
+.love2{
+ display: inline-block;
+ animation: love2 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.love2:hover{
+animation-play-state: running;
+}
+
+@keyframes love3 {
+  0% { transform: translateY(0) translate(0) scale(1); }
+  100%   { transform: translateY(-320px) translate(70px) scale(3); }
+}
+.love3{
+ display: inline-block;
+ animation: love3 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.love3:hover{
+animation-play-state: running;
+}
+
+@keyframes love4 {
+  0% { transform: translateY(0) translate(0) scale(1); }
+  100%   { transform: translateY(-320px) translate(100px) scale(3); }
+}
+.love4{
+ display: inline-block;
+ animation: love4 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.love4:hover{
+animation-play-state: running;
+}
+
+@keyframes amo1 {
+  0% { transform: translate(0) scale(1); }
+  100%   { transform: translate(200px) scale(3); }
+}
+.amo1{
+ display: inline-block;
+ animation: amo1 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.amo1:hover{
+animation-play-state: running;
+}
+
+@keyframes amo2 {
+  0% { transform: translateY(0) translate(0) scale(1); }
+  100%   { transform: translateY(-40px) translate(350px) scale(3); }
+}
+.amo2{
+ display: inline-block;
+ animation: amo2 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.amo2:hover{
+animation-play-state: running;
+}
+
+@keyframes amo3 {
+  0% { transform: translateY(0) translate(0) scale(1); }
+  100%   { transform: translateY(-100px) translate(300px) scale(3); }
+}
+.amo3{
+ display: inline-block;
+ animation: amo3 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.amo3:hover{
+animation-play-state: running;
+}
+
+@keyframes liebe1 {
+  0% { transform: translateY(0) translate(0) scale(1); }
+  100%   { transform: translateY(400px) translate(-10px) scale(3); }
+}
+.liebe1{
+ display: inline-block;
+ animation: liebe1 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.liebe1:hover{
+animation-play-state: running;
+}
+
+@keyframes liebe2 {
+  0% { transform: translateY(0) translate(0) scale(1); }
+  100%   { transform: translateY(400px) translate(10px) scale(3); }
+}
+.liebe2{
+ display: inline-block;
+ animation: liebe2 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.liebe2:hover{
+animation-play-state: running;
+}
+
+@keyframes liebe3 {
+  0% { transform: translateY(0) translate(0) scale(1); }
+  100%   { transform: translateY(400px) translate(40px) scale(3); }
+}
+.liebe3{
+ display: inline-block;
+ animation: liebe3 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.liebe3:hover{
+animation-play-state: running;
+}
+
+@keyframes liebe4 {
+  0% { transform: translateY(0) translate(0) scale(1); }
+  100%   { transform: translateY(400px) translate(80px) scale(3); }
+}
+.liebe4{
+ display: inline-block;
+ animation: liebe4 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.liebe4:hover{
+animation-play-state: running;
+}
+
+@keyframes liebe5 {
+  0% { transform: translateY(0) translate(0) scale(1); }
+  100%   { transform: translateY(400px) translate(450px) scale(3); }
+}
+.liebe5{
+ display: inline-block;
+ animation: liebe5 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.liebe5:hover{
+animation-play-state: running;
+}
+
+@keyframes ai1 {
+  0% { transform: translateY(0) translate(0) scale(1); }
+  100%   { transform: translateY(50px) translate(-260px) scale(3); }
+}
+.ai1{
+ display: inline-block;
+ animation: ai1 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.ai1:hover{
+animation-play-state: running;
+}
+
+@keyframes ai2 {
+  0% { transform: translateY(0) translate(0) scale(1); }
+  100%   { transform: translateY(20px) translate(-500px) scale(3); }
+}
+.ai2{
+ display: inline-block;
+ animation: ai2 2s ease-in infinite;
+ animation-play-state: paused;
+ animation-fill-mode: both;
+}
+.ai2:hover{
+animation-play-state: running;
+}

@@ -1,0 +1,14 @@
+body{
+    background-color: cadetblue;
+}
+
+#container{
+    width:400px;
+    height:500px;
+    background-color: aquamarine;
+}
+
+.move{
+    transition: 2s ease-in;
+    transform: translate(100px,0);
+}

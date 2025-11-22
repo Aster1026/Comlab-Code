@@ -18,6 +18,7 @@ body{
 
 .star{
     width:20px;
+    border-radius: 50%;
 }
 
 .planet.active{

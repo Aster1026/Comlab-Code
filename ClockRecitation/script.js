@@ -17,7 +17,7 @@ function getTheTime(){
 
     repeat(m, function(){
         let star = document.createElement("img")
-        star.src = 'star.png';
+        star.src = 'Star.png';
         star.className = 'star';
         minutesBox.append(star);
     })

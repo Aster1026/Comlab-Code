@@ -1,0 +1,59 @@
+body{
+
+    background: #030316;
+    color:#eaf0ff;
+    position:relative;
+}
+
+.hours{
+   display:inline-block;
+   overflow:auto;
+   width: 900px;
+}
+
+.planet{
+    display:inline-block;
+    position: relative;
+}
+
+.star{
+    width:20px;
+}
+
+.planet.active{
+    animation: planetScale 4s ease-in-out infinite;
+}
+
+@keyframes planetScale {
+    0% {transform: scale(0.5)}
+    50% {transform: scale(1.5)}
+    100% {transform: scale(0.5)}
+}
+
+#flash{
+    margin-left:662px;
+    width:90px;
+    height:90px;
+    background-color: #43986c;
+    opacity: 0;
+    border-radius: 50%;
+    box-shadow:
+    0 6px 18px rgb(97, 182, 138),
+    0 0 40px rgba(67,152,108,1) ;
+}
+
+#flash.flashAnimation{
+    animation: changeOpacity 100ms linear;
+}
+
+@keyframes changeOpacity {
+    0% {opacity: 0 }
+    50% {opacity: 1}
+    100% {opacity: 0 }
+}
+
+.minutes{
+    width:250px;
+    margin-left:580px;
+}
+

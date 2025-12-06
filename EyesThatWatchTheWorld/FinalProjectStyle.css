@@ -1,17 +1,418 @@
-body{
-  transition: background-color 3s ease;
+html,body{
+  height: 100%;
+  margin: 0;
+}
+
+.bgFull{
+  position:fixed;
+  opacity:0;
+  inset: 0;
+  z-index:  -1;
+  transition: opacity 3s ease;
+  background-color: rgb(227,216,200);
+  overflow: hidden;
+}
+
+.bgFull img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
 }
 
 #introQuote {
-  position: absolute;
+  position: fixed;
   color:white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: In 3s ease-in;
+  cursor:pointer;
+  z-index: 100;
+}
+
+.introImage{
+  position: fixed;
+  animation: In 3s ease-in;
+  max-width: 4000px;
+  top:60%;
+  transform: translate(-50%, -50%);
+  vertical-align: baseline;
 }
 
 @keyframes In {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+
+.leftImage{
+  left: 20%;
+  width:400px;
+  height: 580px;
+}
+.rightImage{
+  left: 77%;
+  width:630px;
+  height: 580px;
+}
+
+.center{
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width:400px;
+  z-index: 199;
+}
+
+.title{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color:black;
+  text-align: center;
+  animation: In 5s ease-in;
+  text-shadow: 0 2px 6px rgba(130, 81, 73, 0.8);
+}
+
+.start{
+    padding:10px 25px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor:pointer;
+    font-weight:600;
+    animation: In 5s ease-in;
+}
+
+.year {
+    position: fixed;
+    pointer-events: none;
+    white-space: nowrap;
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    opacity: 0;
+    transform: translateY(0) scale(3);
+    animation: floatFade 3s ease-in-out infinite;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+  }
+
+  @keyframes floatFade {
+    0%   { opacity: 0; transform: translateY(0) scale(0.98); }
+    35%  { opacity: 0.8; transform: translateY(-12px) scale(1.25); }
+    65%  { opacity: 0.8; transform: translateY(-30px) scale(1.75); }
+    100% { opacity: 0; transform: translateY(-50px) scale(2); }
+  }
+
+
+.bgFull.fade-out { 
+  opacity: 0; 
+  transition: opacity 600ms ease; 
+}
+
+.center.fade-out { 
+  opacity: 0; 
+  transition: opacity 500ms ease; 
+  pointer-events: none;
+  z-index: -1;
+}
+
+.introImage {
+  transition: transform 2s ease, opacity 2s ease;
+}
+
+.introImage.exitleft {
+  transform: translateX(-500px) translateY(-300px);
+  opacity: 0;
+}
+
+.introImage.exitright {
+  transform: translateX(100px) translateY(-300px);
+  opacity: 0;
+}
+
+.timeBanner{
+  position:fixed;
+  left: 50%;
+  top:10%;
+  transform: translateX(-50%) translateY(-20px);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 80;
+}
+
+.timeBanner2{
+  position:fixed;
+  left: 50%;
+  top:10%;
+  transform: translateX(-50%) translateY(-20px);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 80;
+}
+
+.timeBanner3{
+  position:fixed;
+  left: 50%;
+  top:10%;
+  transform: translateX(-50%) translateY(-20px);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 80;
+}
+
+.timeBanner4{
+  position:fixed;
+  left: 50%;
+  top:10%;
+  transform: translateX(-50%) translateY(-20px);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 80;
+}
+
+.timeBanner5{
+  position:fixed;
+  left: 50%;
+  top:10%;
+  transform: translateX(-50%) translateY(-20px);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 80;
+}
+
+.timeBox{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 60px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: rgba(213, 200, 175, 0.95);
+  color: #69453b;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.timeBanner.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.timeBanner2.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.timeBanner3.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.timeBanner4.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.timeBanner5.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.timeBanner.hide{
+  opacity: 0;
+  transform: translateX(-50%) translateY(0);
+}
+.timeBanner2.hide{
+  opacity: 0;
+  transform: translateX(-50%) translateY(0);
+}
+.timeBanner3.hide{
+  opacity: 0;
+  transform: translateX(-50%) translateY(0);
+}
+.timeBanner4.hide{
+  opacity: 0;
+  transform: translateX(-50%) translateY(0);
+}
+.timeBanner5.hide{
+  opacity: 0;
+  transform: translateX(-50%) translateY(0);
+}
+
+.marker {
+    position: fixed;
+    right: 45%;
+    top: 57%;
+    z-index: 80;
+    width: 120px;
+    height: 44px;
+    color: black;
+    display:none;
+    align-items:center;
+    transition: transform 450ms ease;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+.marker.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  cursor:pointer;
+  z-index:81;
+}
+  .marker.hide{
+  opacity: 0;
+  transform: translateX(-50%) translateY(0);
+}
+
+.marker2 {
+    position: fixed;
+    left: 40%;
+    top: 45%;
+    z-index: 80;
+    width: 120px;
+    height: 44px;
+    color: black;
+    display:none;
+    align-items:center;
+    transition: transform 450ms ease;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+    .marker2.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  cursor:pointer;
+  z-index:82;
+}
+  .marker2.hide{
+  opacity: 0;
+  transform: translateX(-50%) translateY(0);
+}
+
+.marker3 {
+    position: fixed;
+    right: 25%;
+    top: 40%;
+    z-index: 80;
+    width: 120px;
+    height: 44px;
+    color: black;
+    display:none;
+    align-items:center;
+    transition: transform 450ms ease;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+    .marker3.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  z-index:82;
+  cursor:pointer;
+}
+  .marker3.hide{
+  opacity: 0;
+  transform: translateX(-50%) translateY(0);
+}
+
+.marker5 {
+    position: fixed;
+    right: 43%;
+    top: 40%;
+    z-index: 80;
+    width: 120px;
+    height: 44px;
+    color: black;
+    display:none;
+    align-items:center;
+    transition: transform 450ms ease;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+.marker5.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  z-index:82;
+  cursor:pointer;
+}
+  .marker5.hide{
+  opacity: 0;
+  transform: translateX(-50%) translateY(0);
+}
+
+
+.marker4 {
+    position: fixed;
+    left: 40%;
+    top: 45%;
+    z-index: 80;
+    width: 120px;
+    height: 44px;
+    color: black;
+    display:none;
+    align-items:center;
+    transition: transform 450ms ease;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+    .marker4.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  z-index:82;
+  cursor:pointer;
+}
+  .marker4.hide{
+  opacity: 0;
+  transform: translateX(-50%) translateY(0);
+}
+
+  .scrollContent {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    padding: 40px;
+    color: #fff;
+    min-height: 2400px; 
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .hero {
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+  }
+  .section {
+    margin: 40px auto;
+    max-width: 900px;
+    line-height:1.7;
+    font-size:18px;
+    color: #ddd;
+  }
+
+  .scrollContent.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+

@@ -1,0 +1,428 @@
+html,body{
+    height:100%;
+    margin:0;
+    overflow:hidden;
+}
+.backButton a {
+  text-decoration: none;
+}
+.backButton{
+    position:fixed;
+    left:20px;
+    top:20px;
+    cursor: pointer;
+    font-family:'Times New Roman', Times, serif;
+    z-index: 99;
+}
+
+.wrap{
+    position:absolute;
+    /* overflow:auto; */
+    width:100%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.hot{
+    position: absolute;
+    top:20px;
+    bottom:0;
+    height:40px;
+    width:50%;
+    z-index:50;
+    display:block;
+    font-size:22px;
+    text-align: center;
+    color:rgb(155, 131, 90)
+}
+.hot.left{
+    left:0;
+
+}
+.hot.right{
+    right:0;
+}
+
+.panel{
+    position: fixed;
+    inset:0;
+    opacity:0;
+    pointer-events: none;
+    transition:opacity 1s, transform 1s;
+    z-index:10;
+    transition: background-color 1s ease;
+}
+.panel.black{
+    background-color: black;
+    color:white;
+    font-size: 48px;
+}
+.panel.white{
+    background-color: white;
+    color:black;
+    font-size: 48px;
+}
+
+.panel .panel-inner{
+  position: absolute;
+  inset: 0;         
+  padding: 40px 20px;  
+  overflow: auto;      
+  box-sizing: border-box;
+}
+
+.hot.left:hover ~ .panel.black, .panel.black:hover {
+    opacity:1;
+    transform:scale(1);
+    pointer-events: auto;
+    z-index:30;
+}
+
+.hot.right:hover ~ .panel.white, .panel.white:hover{
+    opacity:1;
+    transform:scale(1);
+    pointer-events: auto;
+    z-index:30;
+}
+
+
+.title{
+    position:absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    top: 5%;
+    /* animation: appear 2s ease-in; */
+}
+
+.plot1{ 
+    position: absolute; 
+    top: 15%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    display: inline-block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    font-family: 'Times New Roman', Times, serif; 
+    opacity:1;
+    font-size: 20px; 
+}
+.plot1.show{
+    opacity: 1;
+    animation: plot1 5s steps(100) forwards; 
+}
+.plot2{ 
+    position: absolute; 
+    top: 82%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    display: inline-block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    font-family: 'Times New Roman', Times, serif; 
+    opacity:1;
+    font-size: 20px; 
+}
+.plot2.show{
+    opacity: 1;
+    animation: plot1 5s steps(100) forwards; 
+}
+.plot3{ 
+    position: absolute; 
+    top: 100%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    display: inline-block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    font-family: 'Times New Roman', Times, serif; 
+    opacity:1;
+    font-size: 20px; 
+}
+.plot3.show{
+    opacity: 1;
+    animation: plot1 5s steps(100) forwards; 
+}
+.plot4{ 
+    position: absolute; 
+    top: 170%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    display: inline-block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    font-family: 'Times New Roman', Times, serif; 
+    opacity:1;
+    font-size: 20px; 
+}
+.plot4.show{
+    opacity: 1;
+    animation: plot1 5s steps(100) forwards; 
+}
+.plot5{ 
+    position: absolute; 
+    top: 250%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    display: inline-block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    font-family: 'Times New Roman', Times, serif; 
+    opacity:1;
+    font-size: 20px; 
+}
+.plot5.show{
+    opacity: 1;
+    animation: plot1 5s steps(100) forwards; 
+}
+.plot6{ 
+    position: absolute; 
+    top: 305%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    display: inline-block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    font-family: 'Times New Roman', Times, serif; 
+    opacity:0;
+    font-size: 20px; 
+}
+.plot6.show{
+    opacity: 1;
+    animation: importantLine 2.4s ease-in-out 1 forwards;
+}
+.plot7{ 
+    position: absolute; 
+    top: 410%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    display: inline-block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    font-family: 'Times New Roman', Times, serif; 
+    opacity:1;
+    font-size: 20px; 
+    color:black;
+}
+.plot7.show{
+    opacity: 1;
+    animation: plot1 5s steps(100) forwards; 
+}
+.plot8{ 
+    position: absolute; 
+    top: 305%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    display: inline-block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    font-family: 'Times New Roman', Times, serif; 
+    opacity:0;
+    font-size: 20px; 
+}
+.plot8.show{
+    opacity: 1;
+    animation: importantLine 2.4s ease-in-out 1 forwards;
+}
+
+
+
+
+
+
+.Chapter2img1{
+    position: absolute;
+    top: 30%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 800px;
+    opacity:1;
+}
+.Chapter2img1.show{
+    animation: appear 3s ease-in;
+    opacity: 1;
+}
+.Chapter2img3{
+    position: absolute;
+    top: 117%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 800px;
+    opacity:1;
+}
+.Chapter2img3.show{
+    animation: appear 3s ease-in;
+    opacity: 1;
+}
+.Chapter2img4{
+    position: absolute;
+    top: 117%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 800px;
+    opacity:0;
+}
+.Chapter2img4.show{
+    animation: appear 3s ease-in;
+    opacity: 1;
+}
+.Chapter2img5{
+    position: absolute;
+    top: 195%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 800px;
+    opacity:1;
+}
+.Chapter2img5.show{
+    animation: appear 3s ease-in;
+    opacity: 1;
+}
+.Chapter2img6{
+    position: absolute;
+    top: 270%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%;
+    opacity:1;
+}
+.Chapter2img5.show{
+    animation: appear 3s ease-in;
+    opacity: 1;
+}
+
+.i1{
+    cursor:pointer;
+}
+.i2{
+    cursor:pointer;
+}
+.i3{
+    cursor:pointer;
+}
+.i4{
+    cursor:pointer;
+}
+.i5{
+    cursor:pointer;
+}
+.i6{
+    cursor:pointer;
+}
+
+.element1, .element2, .element3{
+    position: absolute;
+    transform: translateX(-50%); 
+    width:400px;
+    opacity:0;
+    z-index:20;
+}
+.element1{
+    left:57%;
+    top: 110%; 
+}
+.element2{
+    left:72%;
+    top: 126%; 
+}
+.element3{
+    left:57%;
+    top: 130%; 
+}
+.element1.show{
+    animation: appear .3s ease-in;
+    opacity: 1;
+}
+.element2.show{
+    animation: appear .3s ease-in;
+    opacity: 1;
+}
+.element3.show{
+    animation: appear .3s ease-in;
+    opacity: 1;
+}
+
+
+
+
+
+
+@keyframes plot1 {
+  from { width: 0; }
+  to   { width: calc(100 * 1ch); }
+}
+
+@keyframes appear {
+  from { opacity: 0}
+  to   { opacity: 1}
+}
+
+@keyframes importantLine {
+    0% {
+        transform:translateX(-50%) scale(0);
+        opacity:0;
+        filter:brightness(0);
+        color:antiquewhite;
+    }
+    20% {
+        transform:translateX(-50%) scale(0.5);
+        opacity:0.3;
+        filter:brightness(0.3);
+        color:rgb(209, 188, 160);
+    }
+    40% {
+        transform:translateX(-50%) scale(1);
+        opacity:0.6;
+        filter:brightness(0.6);
+        color:rgb(194, 157, 110);
+    }
+    60% {
+        transform:translateX(-50%) scale(1.5);
+        opacity:1;
+        filter:brightness(0.9);
+    }
+    80% {
+        transform:translateX(-50%) scale(1.7);
+        opacity:1;
+        filter:brightness(1.1);
+    }    
+    100% {
+    transform:translateX(-50%)  scale(1.9);
+    color: rgb(207, 124, 24);  
+    opacity: 1;
+  } 
+}
+
+.togetherBlack{
+    width:100%;
+    z-index:9999;
+    position:fixed;
+    bottom:0;
+    left:0;
+    display:none;
+}
+.togetherBlack.show{
+    animation: appear 3s ease-in;
+    opacity: 1;
+}
+.togetherWhite{
+    width:100%;
+    z-index:9999;
+    position:fixed;
+    bottom:0;
+    left:0;
+    display:none;
+}
+.togetherWhite.show{
+    animation: appear 3s ease-in;
+    opacity: 1;
+}

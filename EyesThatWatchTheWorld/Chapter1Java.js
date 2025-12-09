@@ -26,7 +26,7 @@ window. addEventListener('scroll', function() {
 
     let lonelyBgm = document.createElement("audio");
     lonelyBgm.id = "lonelyBgm";
-    lonelyBgm.src = "IO/test.mp3";
+    lonelyBgm.src = "Assets/test.wav";
     lonelyBgm.loop = true;
     lonelyBgm.preload = "auto";
     lonelyBgm.style.display = "none";

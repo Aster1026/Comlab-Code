@@ -131,6 +131,7 @@ function intoStory(){
     });
 
     document.querySelector('.timeBanner')?.classList.add('show');
+    document.querySelector('.instruction')?.classList.add('show');
     document.querySelector('.marker')?.classList.add('show');
     document.querySelector('.scrollContent')?.classList.add('show');
 

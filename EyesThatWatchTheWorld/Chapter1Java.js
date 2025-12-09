@@ -21,18 +21,25 @@ window. addEventListener('scroll', function() {
     let s2 = document.querySelector(".s2");
     let s3 = document.querySelector(".s3");
     let s4 = document.querySelector(".s4");
-    if (percentage >0){
-      plot1.classList.add('show');
+
 
     let lonelyBgm = document.createElement("audio");
     lonelyBgm.id = "lonelyBgm";
-    lonelyBgm.src = "Assets/test.wav";
+    lonelyBgm.src = "Assets/test.mp3";
     lonelyBgm.loop = true;
     lonelyBgm.preload = "auto";
     lonelyBgm.style.display = "none";
+    let test = document.querySelector("#lonelyBgm");
+
+    console.log(test);
+    if (percentage >0 && test == null){
+      plot1.classList.add('show');
+
     document.body.appendChild(lonelyBgm);
     lonelyBgm.play();
     } 
+
+
     if (percentage >7){
       plot2.classList.add('show');
     } 

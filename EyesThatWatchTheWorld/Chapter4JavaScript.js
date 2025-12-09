@@ -83,20 +83,27 @@ window. addEventListener('scroll', function() {
     if (percentage >1){
       Chapter4img1.classList.add('show');
     } 
-    if (percentage >4){
-      Chapter4img2.classList.add('show');
-    } 
-    if (percentage >10){
-      Chapter4img3.classList.add('show');
-      
+
+
     let endBgm = document.createElement("audio");
     endBgm.id = "endBgm";
     endBgm.src = "Assets/end.mp3";
     endBgm.loop = true;
     endBgm.preload = "auto";
     endBgm.style.display = "none";
-    document.body.appendChild(endBgm);
+    let test = document.querySelector("#endBgm");
+
+    console.log(test);
+
+    if (percentage >4 && test == null){
+      Chapter4img2.classList.add('show');
+          document.body.appendChild(endBgm);
     endBgm.play();
+    } 
+
+    if (percentage >9){
+      Chapter4img3.classList.add('show');
+      
     } 
     if (percentage >18){
       plot3.classList.add('show');

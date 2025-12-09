@@ -23,6 +23,15 @@ window. addEventListener('scroll', function() {
     let s4 = document.querySelector(".s4");
     if (percentage >0){
       plot1.classList.add('show');
+
+    let lonelyBgm = document.createElement("audio");
+    lonelyBgm.id = "lonelyBgm";
+    lonelyBgm.src = "IO/test.mp3";
+    lonelyBgm.loop = true;
+    lonelyBgm.preload = "auto";
+    lonelyBgm.style.display = "none";
+    document.body.appendChild(lonelyBgm);
+    lonelyBgm.play();
     } 
     if (percentage >7){
       plot2.classList.add('show');

@@ -1,5 +1,14 @@
 let IO1 = document.querySelector(".IO1");
 IO1.addEventListener("click",function(){
+    let lonelyBgm = document.createElement("audio");
+    lonelyBgm.id = "lonelyBgm";
+    lonelyBgm.src = "Assets/test.mp3";
+    lonelyBgm.loop = true;
+    lonelyBgm.preload = "auto";
+    lonelyBgm.style.display = "none";
+    document.body.appendChild(lonelyBgm);
+    lonelyBgm.play();
+
     let t11 = document.querySelector("#t11");
     let t12 = document.querySelector("#t12");
     console.log("clicked");

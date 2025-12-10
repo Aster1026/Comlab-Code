@@ -43,6 +43,15 @@ function imagine3(){
         let bgblack = document.querySelector(".panel");
     bgblack.style.backgroundColor="white";
 
+        let startBgm = document.createElement("audio");
+    startBgm.id = "startBgm";
+    startBgm.src = "Assets/startBgm.mp3";
+    startBgm.loop = true;
+    startBgm.preload = "auto";
+    startBgm.style.display = "none";
+    document.body.appendChild(startBgm);
+    startBgm.play();
+
 }
 
 let i4 = document.querySelector(".i4");

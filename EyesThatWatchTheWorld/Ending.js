@@ -42,3 +42,15 @@ setTimeout(function(){
     t7.style.display = "none";
     ending1.style.display = "none";
 },35000);
+
+
+setTimeout(function(){
+    let endBgm = document.createElement("audio");
+    endBgm.id = "endBgm";
+    endBgm.src = "Assets/end.mp3";
+    endBgm.loop = true;
+    endBgm.preload = "auto";
+    endBgm.style.display = "none";
+    document.body.appendChild(endBgm);
+    endBgm.play();
+},500);

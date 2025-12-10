@@ -42,7 +42,7 @@ body{
     height:70%;
     top:15%;
     z-index:99;
-    left:10%;
+    left:50%;
     opacity:1;
     animation: appear 2s ease-in;
     display:none;

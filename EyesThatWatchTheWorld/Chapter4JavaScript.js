@@ -101,18 +101,69 @@ window. addEventListener('scroll', function() {
     endBgm.play();
     } 
 
+
+let screenFlash = document.querySelector('.screen-flash');
+if (!screenFlash) {
+  screenFlash = document.createElement('div');
+  screenFlash.className = 'screen-flash';
+  document.body.appendChild(screenFlash);
+}
+
+let flashIntervalId = null;
+function startScreenFlash() {
+  if (flashIntervalId !== null) return; 
+  screenFlash.classList.add('visible');
+  setTimeout(function() {
+    screenFlash.classList.remove('visible');
+  }, 300);
+    setTimeout(function() {
+    screenFlash.classList.remove('visible');
+  }, 300);
+
+}
+
+    let heartbeat = document.createElement("audio");
+    heartbeat.id = "heartbeat";
+    heartbeat.src = "Assets/heartbeat.mp3";
+    heartbeat.loop = true;
+    heartbeat.preload = "auto";
+    heartbeat.style.display = "none";
+    let test1 = document.querySelector("#heartbeat");
+
+    console.log(test1);
+
+
+function stopScreenFlash() {
+  if (flashIntervalId === null) return;
+  clearInterval(flashIntervalId);
+  flashIntervalId = null;
+  screenFlash.classList.remove('visible');
+}
+
+
     if (percentage >9){
       Chapter4img3.classList.add('show');
-      
     } 
-    if (percentage >18){
+
+
+    if (percentage >18 && percentage < 27 && test1 == null){
       plot3.classList.add('show');
-    } 
+      startScreenFlash();
+    document.body.appendChild(heartbeat);
+    heartbeat.play();
+    } else{
+      stopScreenFlash();
+    }
+
+
+
     if (percentage >20){
       Chapter4img4.classList.add('show');
       Chapter4img5.classList.add('show');
       plot4.classList.add('show');
     } 
+
+
     if (percentage >27 && percentage<32){
       s1.style.display = "flex";
       s1.classList.add('show');

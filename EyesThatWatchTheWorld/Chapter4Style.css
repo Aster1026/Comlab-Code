@@ -11,6 +11,21 @@ body{
     /* animation: appear 2s ease-in; */
 }
 
+.screen-flash {
+  position: fixed;
+  inset: 0;
+  background: rgb(245, 236, 220);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 80ms linear;
+  z-index: 9999; 
+}
+
+
+.screen-flash.visible {
+  opacity: 1;
+}
+
 .plot1{ 
     position: absolute; 
     top: 22%;

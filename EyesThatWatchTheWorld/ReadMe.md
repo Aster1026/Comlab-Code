@@ -17,7 +17,7 @@ Was he ever truly seen?
 
 **The translation into the medium of the web:**
 
-The original story was told in the form of storyboard-style animation. By translating it into a web-based format, the project allows viewers to interact with key moments in the narrative—such as clicking to trigger significant lines, or hovering to reveal shifting perspectives between two characters. Changes in location and time are also visually presented, offering additional details that expand the story world. Different chapters adopt slightly different interactive approaches, aiming to enrich the audience’s experience and their ways of engaging with the narrative.
+The original story was told in the form of storyboard-style animation. By translating it into a web-based format, the project allows viewers to interact with key moments in the narrative—such as clicking to trigger significant lines, or hovering to reveal shifting perspectives between two characters. 
 
 **Key idea guiding this version:**
 
